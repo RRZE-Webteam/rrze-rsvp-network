@@ -4,7 +4,7 @@
 Plugin Name:     RRZE RSVP NETWORK
 Plugin URI:      https://github.com/RRZE-Webteam/rrze-rsvp-network
 Description:     Kontaktverfolgung zum Platzbuchungssystem (RRZE-RSVP) der FAU
-Version:         0.0.1
+Version:         0.0.2
 Author:          RRZE-Webteam
 Author URI:      https://blogs.fau.de/webworking/
 License:         GNU General Public License v2
@@ -18,9 +18,6 @@ namespace RRZE\RSVPNETWORK;
 
 defined('ABSPATH') || exit;
 
-
-// // Laden der Konfigurationsdatei
-// require_once __DIR__ . '/config/config.php';
 
 // Autoloader (PSR-4)
 spl_autoload_register(function ($class) {
@@ -138,8 +135,7 @@ function loaded()
         return;
     }
 
-
-
-    $main = new Main(__FILE__);
-    $main->onLoaded();
+    // Tracking
+	$tracking = new NetworkTracking();
+	$tracking->onLoaded();
 }
