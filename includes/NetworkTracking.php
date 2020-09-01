@@ -24,8 +24,6 @@ class NetworkTracking extends Tracking
 
     public function onLoaded()
     {
-        $this->checkDbExists();
-
         add_action( 'network_admin_menu', [$this, 'add_tracking_networkmenu']) ;
         add_action( 'wp_ajax_csv_pull', [$this, 'tracking_csv_pull'] );
     }
