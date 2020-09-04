@@ -40,7 +40,7 @@ class NetworkTracking extends Tracking
             _x( 'RSVP Contact tracking', 'admin menu entry title', 'rrze-rsvp-network' ),
             'manage_network_options',
             'rrze-rsvp-tracking',
-            [$this, 'admin_page_tracking']
+            [$this, 'admin_page_tracking_form']
         );
     }
 
