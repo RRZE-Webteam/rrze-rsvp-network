@@ -19,3 +19,5 @@ GNU General Public License (GPL) Version 3
 
 Das Plugin ermöglicht das Auswerten der Daten vom Plugin RRZE-RSVP für eine Kontaktverfolgung als notwendige Maßnahme zur Eindämmung der Corona-Pandemie.
 
+Es benötigt das Plugin rrze-rsvp ( https://github.com/RRZE-Webteam/rrze-rsvp ).
+
